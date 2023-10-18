@@ -14,6 +14,11 @@ public class SpringbootAzureDemoApplication {
 		return "Hello World !!";
 	}
 
+	@GetMapping("/greet")
+	public String greet(){
+		return "Good Morning";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootAzureDemoApplication.class, args);
 	}
